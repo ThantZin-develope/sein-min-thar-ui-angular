@@ -1,0 +1,36 @@
+{
+
+    "app-name": "Sein Min Thar",
+
+  "dashboard-tab":"Dashboard",
+  "items-tab": {
+    "name": "Items",
+    "fd-tab-name":
+       "Foods and Drinks",
+
+    "ct-tab-name":
+       "Cosmestic Things"
+
+  },
+  "buy-and-sell-tab":{
+    "name": "Buy and Sell",
+    "buy-tab-name":
+      "Buy"
+    ,
+    "sell-tab-name":
+       "Sell"
+
+  },
+  "money-tab": {
+    "name": "Money",
+    "income-tab-name":"Income",
+    "outgoing-tab-name":"Outgoing"
+  },
+  "employees-tab-name": "Employee Info",
+  "notifications-tab-name": "Notifications",
+  "setting-tab-name":
+    "Setting",
+  "logout-tt": "Logout",
+
+  "success-default-message": "ောင်မြင်စွာလည်ပတ်ခဲ့သည်"
+}

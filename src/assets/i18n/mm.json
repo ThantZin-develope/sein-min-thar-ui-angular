@@ -1,0 +1,36 @@
+{
+
+    "app-name": "စိန်မင်းသား",
+
+  "dashboard-tab":"ခြုံငုံသုံးသပ်ချက်",
+  "items-tab": {
+    "name": "ပစ္စည်းများ",
+    "fd-tab-name":
+       "အစားအစာနှင့်အချိုရည်",
+
+    "ct-tab-name":
+       "အလှကုန်"
+
+  },
+  "buy-and-sell-tab":{
+    "name": "ရောင်း၀ယ်",
+    "buy-tab-name":
+      "အရောင်း"
+    ,
+    "sell-tab-name":
+       "အ၀ယ်"
+
+  },
+  "money-tab": {
+    "name": "ပိုက်ဆံ",
+    "income-tab-name":"ဝင်ငွေ",
+    "outgoing-tab-name":"အထွက်"
+  },
+  "employees-tab-name": "ဝန်ထမ်းများ",
+  "notifications-tab-name": "အသိပေးချက်များ",
+  "setting-tab-name":
+    "ချိန်ညှိချက်မျာ",
+    "logout-tt": "ထွက်ပေါက်",
+
+  "success-default-message": "ောင်မြင်စွာလည်ပတ်ခဲ့သည်"
+}

@@ -1,0 +1,139 @@
+<nz-layout>
+
+  <nz-sider nzCollapsible nzWidth="225px">
+
+    <ul nz-menu nzTheme="dark" nzMode="inline">
+      <li nz-menu-item>
+        <i nz-icon nzType="dashboard"></i>
+
+        <span class="label" translate>
+          dashboard-tab
+          <a routerLink='/home/dashboard'></a>
+        </span>
+
+      </li>
+      <li nz-submenu [nzTitle]="'items-tab.name' | translate" nzIcon='group'>
+        <ul>
+          <li nz-menu-item>
+            <i nz-icon nzType="star"></i>
+
+            <span class="label" translate>
+              items-tab.fd-tab-name
+              <a routerLink='/home/items'></a>
+            </span>
+
+          </li>
+          <li nz-menu-item>
+            <i nz-icon nzType="star"></i>
+
+            <span class="label" translate>
+              items-tab.ct-tab-name
+              <a routerLink='/home/items1'></a>
+            </span>
+
+          </li>
+        </ul>
+      </li>
+      <li nz-submenu [nzTitle]="'buy-and-sell-tab.name' | translate" nzIcon='shopping-cart'>
+        <ul>
+          <li nz-menu-item>
+            <i nz-icon nzType="star"></i>
+
+            <span class="label" translate>
+              buy-and-sell-tab.buy-tab-name
+              <a routerLink='/home/buying'></a>
+            </span>
+
+          </li>
+          <li nz-menu-item>
+            <i nz-icon nzType="star"></i>
+            <span class="label" translate>
+              buy-and-sell-tab.sell-tab-name
+              <a routerLink='/home/selling'></a>
+            </span>
+
+          </li>
+        </ul>
+      </li>
+      <li nz-submenu [nzTitle]="'money-tab.name' | translate" nzIcon="dollar">
+        <ul>
+          <li nz-menu-item>
+            <i nz-icon nzType="star"></i>
+            <span class="label" translate>
+              money-tab.income-tab-name
+              <a routerLink='/home/income'></a>
+            </span>
+
+          </li>
+          <li nz-menu-item>
+            <i nz-icon nzType="star"></i>
+            <span class="label" translate>
+              money-tab.outgoing-tab-name
+              <a routerLink='/home/outgoing'></a>
+            </span>
+
+          </li>
+
+        </ul>
+      </li>
+
+      <li nz-menu-item>
+        <i nz-icon nzType="team"></i>
+        <span class="label" translate>
+          employees-tab-name
+          <a routerLink='/home/employees'></a>
+        </span>
+
+      </li>
+
+
+      <li nz-menu-item>
+        <i nz-icon nzType="notification"></i>
+        <span class="label" translate>
+          notifications-tab-name
+          <a routerLink='/home/notifications'></a>
+        </span>
+
+      </li>
+      <li nz-menu-item>
+        <i nz-icon nzType="setting"></i>
+        <span class="label" translate>
+          setting-tab-name
+          <a routerLink='/home/setting'></a>
+        </span>
+
+      </li>
+
+
+    </ul>
+  </nz-sider>
+
+  <nz-layout>
+    <nz-header>
+      <div class="header">
+       <div class="header-left-corner">
+       <p class="header-text" style="font-size: larger;" translate>app-name</p>
+          <!-- <img nz-image nzSrc="/assets/imgs/smt_logo.PNG" height="40px" style="cursor: pointer;border-radius: 10px;" /> -->
+     </div>
+          <div class='header-right-corner'>
+       <p  class="header-text"> {{today_date | date : 'M/d/yy, h:mm a'}}</p>
+
+        </div>
+
+          <nz-divider nzType='vertical'></nz-divider>
+
+
+
+
+        <i nz-icon nzType='logout' nz-tooltip [nzTooltipTitle]="'logout-tt' | translate" class="logout-btn"></i>
+
+      </div>
+    </nz-header>
+    <nz-content>
+
+      <div class="inner-content">
+        <router-outlet></router-outlet>
+      </div>
+    </nz-content>
+  </nz-layout>
+</nz-layout>

@@ -1,0 +1,36 @@
+<div class="parent-container">
+  <form nz-form [formGroup]="validated_form" class="login-form" (ngSubmit)="submitForm()" >
+    <h2 style="text-align: center;font-weight: bold;color: blue;line-height: 200%;">စိန်မင်းသာ:</h2>
+    <nz-form-item>
+      <nz-form-control [nzErrorTip]="user_name_required">
+        <nz-input-group [nzPrefix]="user_icon" [nzSuffix]="user_name_clear_icon">
+          <input nz-input #user_name_input formControlName="user_name" [placeholder]="user_name_placeholder" />
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-control [nzErrorTip]="password_required">
+        <nz-input-group [nzPrefix]="password_icon" [nzSuffix]="eye_icon">
+          <input formControlName="password" #password_input  [type]="show_password ? 'text' : 'password'" nz-input [placeholder]="password_placeholder" />
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+    <div style="width: 100%">
+      <button nz-button nzBlock [nzLoading]="login_btn_loading" [disabled]="login_btn_loading" nzType='primary'>{{login_btn_name}}</button>
+    </div>
+
+  </form>
+</div>
+<ng-template #user_icon>
+  <i nz-icon nzType="user"></i>
+</ng-template>
+<ng-template #user_name_clear_icon>
+  <i nz-icon *ngIf="user_name_input.value" (click)="user_name_input.value = '' " nzType="close" ></i>
+</ng-template>
+<ng-template #password_icon>
+  <i nz-icon nzType="lock"></i>
+</ng-template>
+<ng-template #eye_icon>
+
+  <i nz-icon *ngIf="password_input.value" (click)="show_password = !show_password"  [nzType]="!show_password ? 'eye' : 'eye-invisible' "></i>
+</ng-template>

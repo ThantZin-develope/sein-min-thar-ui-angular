@@ -1,0 +1,74 @@
+.logo {
+  height: 10px;
+  /* background-color: white; */
+  width: 90px;
+  margin: 16px;
+}
+
+
+nz-sider::-webkit-scrollbar {
+  display: none;
+  height: 100vh;
+overflow: auto;
+}
+
+
+nz-sider {
+-ms-overflow-style: none;
+scrollbar-width: none;
+height: 100vh;
+overflow: auto;
+}
+
+nz-content {
+  margin: 10px;
+}
+
+
+
+nz-header{
+  height: 50px;
+  width: 100%;
+  /* position: fixed; */
+
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.header-left-corner{
+  margin-left:0px;
+  margin-right: auto;
+}
+
+.header-text{
+
+  color: white;
+  margin-top: 0px;
+  margin-bottom: auto;
+}
+
+.header-right-corner{
+  margin-right: 0px;
+  margin-left: auto;
+}
+
+
+.logout-btn{
+  font-size: larger;
+  color: white;
+  cursor: pointer;
+}
+
+.inner-content {
+  padding: 24px;
+  background: #fff;
+  min-height: 360px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
